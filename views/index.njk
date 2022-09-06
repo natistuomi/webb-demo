@@ -6,8 +6,12 @@
     <p>Detta är dock statisk text. Följt av data från databas.</p>
     <ul>
         {% for row in rows %}
-        <li>{{ row.name }}{{ row.secret_identity }}</li>
-        {% endfor %}
+        <li>
+            <b>Name:</b> {{ row.name }}<br>
+            <b>Secret identity:</b> {{ row.secret_identity }}<br>
+            <b>Bio:</b> {{ row.bio  }}<br><br>
+        </li>
+        {% endfor %} 
     </ul>
 </main>
 {% endblock %}%

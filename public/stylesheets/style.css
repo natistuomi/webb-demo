@@ -139,12 +139,13 @@ select {
 }
 :root[data-user-color-scheme=dark] {
   --color-foreground: #efefef;
-  --color-background: #333;
+  --color-background: #9c3933;
+  --color-cards: #fffcd9;
 }
 
 body {
   color: var(--color-foreground);
-  background-color: var(--color-background);
+  background-color: #3a3c55;
   font-family: "Merriweather Sans", sans-serif;
   font-size: var(--step-0);
   line-height: 1.5;
@@ -156,4 +157,31 @@ body {
 
 h1 {
   font-size: var(--step-5);
+  color: #fffcd9;
+}
+
+p{
+  color: #fffcd9;
+}
+
+ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+  background-color: #fffcd9;
+  padding: 2rem 4rem 0 4rem;
+  margin: 1rem 5rem;
+  width: 100%;
+  border-radius: 25px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
