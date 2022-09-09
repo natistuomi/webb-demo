@@ -23,4 +23,13 @@ router.get('/', async function(req, res, next) {
     }
 });
 
+router.get('/test', function(request, response, next){
+    response.render('test.njk',{
+        title: 'Testsida',
+        steg1: '1. Testa router m. fil(test.njk)',
+        steg2: '2. Skicka TITLE data till test.',
+        steg3: '3. Extenda test layout från layout.njk.'
+    });
+});
+
 module.exports = router;

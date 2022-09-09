@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="/stylesheets/style.css" />
     </head>
     <body>
+        {% include "components/_nav.njk" %}
         {% block content %}
         {% endblock %}
+        {% include "components/_footer.njk" %}
     </body>
 </html>
