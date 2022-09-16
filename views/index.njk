@@ -7,9 +7,17 @@
     <ul>
         {% for row in rows %}
         <li>
-            <b>Name:</b> {{ row.name }}<br>
-            <b>Secret identity:</b> {{ row.secret_identity }}<br>
-            <b>Bio:</b> {{ row.bio  }}<br><br>
+            <div class="leftside">
+                <b>Name:</b> {{ row.name }}<br>
+                <b>Age:</b> {{ row.age  }}<br>
+                <b>Secret identity:</b> {{ row.secret_identity }}<br>
+                <b>E-mail:</b> {{ row.email  }}<br>
+                <b>Bio:</b> {{ row.bio }}<br>
+            </div>
+            <div class="line"></div>
+            <div class="rightside">
+                <h5>ID: {{ row.id }}</h5>
+            </div>
         </li>
         {% endfor %} 
     </ul>
